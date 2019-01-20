@@ -15,12 +15,16 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  ngAfterViewInit() {
+    document.querySelector('body').setAttribute("style", "background-color: #F7F7F7;");
+  }
 
   login(event: Event): void {
     event.preventDefault();
     this.email = this.email.trim();
     this.password = this.password.trim();
-    if(this.email === "everyulb" && this.password === "everyulb"){
+    if(this.email === "admin@everyulb.com" && this.password === "everyulb"){
       this.router.navigate(['dashboard']);
     } else {
       alert('Wrong Credentials');

@@ -11,5 +11,9 @@ export class CsrBaseComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  ngAfterViewInit() {
+    document.querySelector('body').setAttribute("style", "background-color: #fff;");
+  }
 
 }
