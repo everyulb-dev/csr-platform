@@ -33,7 +33,7 @@ body {
 
 .nav-brand {
     color: var(--themeRed);
-    margin-left: 10%;
+    margin-left: 82px;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 80px;
