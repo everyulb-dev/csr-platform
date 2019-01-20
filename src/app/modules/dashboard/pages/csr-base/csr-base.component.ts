@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-csr-base',
@@ -7,13 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CsrBaseComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   
   ngAfterViewInit() {
     document.querySelector('body').setAttribute("style", "background-color: #fff;");
+  }
+
+  openOptionsMenu() {
+    this.trigger.openMenu();
+  }
+
+  logout(): void {
+    this.router.navigate(['login']);
   }
 
 }
