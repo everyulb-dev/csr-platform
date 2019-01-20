@@ -1,0 +1,120 @@
+/* Navigation */
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --themeRed: #902729;
+    --dark: #333;
+    --light: #fff;
+    --lightWt: 300;
+    --boldWt: 700;
+    --regularWt: 400;
+}
+
+.nav-header {
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    margin: 0;
+    background: rgba(247, 247, 247, 1);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+.nav-brand {
+    color: var(--themeRed);
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 80px;
+    display: inline;
+}
+
+.nav-right-links {
+    float: right;
+}
+
+.nav-right-links img {
+    margin-right: 82px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.section-wrapper {
+    margin-top: 15px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+    "updates updates projects"
+    "tasks   tasks   projects";
+    margin-right: 82px;
+}
+
+.updates {
+    margin: 10px;
+    grid-area: updates;
+    margin-left: 82px;
+    border-radius: 10px;
+}
+
+.tasks {
+    margin: 10px;
+    margin-top: 0px;
+    grid-area: tasks;
+    margin-left: 82px;
+}
+
+.projects {
+    margin: 10px;
+    grid-area: projects;
+}
+
+
+
+
+/* .nav-links  {
+    background: #F5F5F5;
+    color: var(--dark);
+    height: 60px;
+    line-height: 60px;
+    padding-left: 250px;
+    box-shadow: var(--shadow);
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: var(--regularWt);
+    margin-right: 80px;
+}
+
+.nav-links a:active {
+    border-bottom: 6px solid var(--dark);
+}
+.nav-links a:hover {
+    border-bottom: 6px solid var(--dark);
+}
+
+.active-link {
+    border-bottom: 6px solid var(--dark);
+} */

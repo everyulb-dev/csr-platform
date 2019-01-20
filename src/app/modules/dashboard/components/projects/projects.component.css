@@ -1,0 +1,16 @@
+.projects-content {
+    height: 750px;
+    padding-right: 20px;
+    overflow-y: auto;
+}
+
+
+.projects-content::-webkit-scrollbar {
+    width: 9px;
+    background-color: #F5F5F5;
+} 
+
+.projects-content::-webkit-scrollbar-thumb {
+    background-color: #D8D8D8;
+    border-radius: 10px;
+}
