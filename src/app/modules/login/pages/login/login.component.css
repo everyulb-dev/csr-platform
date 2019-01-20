@@ -1,19 +1,4 @@
 
-html {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    padding: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
-    background-color: #F7F7F7 !important;
-}
-
 .form-wrapper {
     margin-left: 0px;
     width: 100%;
