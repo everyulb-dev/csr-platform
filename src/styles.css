@@ -110,6 +110,7 @@ body {
 .meta .members {
     display: inline-block;
     margin-left: 15px;
+    float: right;
 }
 .meta .members img{
     width: 27px;
