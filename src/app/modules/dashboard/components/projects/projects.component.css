@@ -25,3 +25,32 @@
     float: right;
     cursor: pointer;
 }
+
+.progress-label{
+    height: 27px;;
+    background: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 7px 0 7px;
+}
+
+.progress-label p {
+    text-align: center;
+    line-height: 27px;
+    font-size: 14px;
+    font-weight: var(--boldWt);
+}
+
+.ongoing {
+    color: #39914F;
+}
+
+.survey {
+    color: #AB3EDA;
+}
+
+.impact-analysis {
+    color: #116ECB;
+}
