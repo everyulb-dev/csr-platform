@@ -6,6 +6,24 @@
     display: block;
 }
 
+.wide-tiles p {
+    font-weight: var(--boldWt);
+}
+
 .progress-bar, .progress {
     border-radius: 14px;
+}
+
+.wide-tiles button {
+    background: none;
+    border: none;
+    margin-right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.percent {
+    float: right;
+    margin-right: 30px;
+    color: #464646;
 }
