@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { LoginModule } from './modules/login/login.module';
+import { ProjectModule } from './modules/project/project.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     SharedModule,
     DashboardModule,
     LoginModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

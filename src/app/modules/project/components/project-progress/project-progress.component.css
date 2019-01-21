@@ -1,0 +1,15 @@
+.section-header {
+    margin-top: 52px;
+}
+
+.wide-tiles {
+    display: block;
+}
+
+.step-name {
+    font-weight: var(--boldWt);
+}
+
+.task-progress {
+    font-size: 14px;
+}

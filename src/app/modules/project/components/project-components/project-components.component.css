@@ -1,0 +1,11 @@
+.section-header {
+    margin-top: 52px;
+}
+
+.wide-tiles {
+    display: block;
+}
+
+.progress-bar, .progress {
+    border-radius: 14px;
+}

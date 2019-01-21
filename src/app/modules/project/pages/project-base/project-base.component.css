@@ -1,0 +1,88 @@
+.nav-header {
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    margin: 0;
+    background: rgba(247, 247, 247, 1);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 80px;
+    display: inline-block;
+}
+
+.nav-brand i {
+    display: inline;
+}
+
+.nav-header button {
+    background: none;
+    border: none;
+    display: inline;
+    margin-left: 80px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.progress-label{
+    width: 164px;
+    height: 33px;;
+    background: white;
+    border-radius: 30px;
+    color: #39914F;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.progress-label p {
+    text-align: center;
+    line-height: 33px;
+
+}
+
+.project-name {
+    display: inline;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 17px;
+}
+
+.nav-right-links {
+    float: right;
+}
+
+.nav-right-links img {
+    margin-right: 82px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    transform: translate3d(-10px, 74px, 0px) !important;
+    width: 151px;
+}
+
+.dropdown-item {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-menu button {
+    margin: 0px;
+}
+
+.section-wrapper {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80x;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
