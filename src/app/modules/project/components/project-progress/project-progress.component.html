@@ -1,6 +1,6 @@
 <h4 class="section-header">Project Progress</h4>
 <div class="project-components-content">
-    <div class="wide-tiles">
+    <!-- <div class="wide-tiles">
       <p class="step-name">Step Name</p>
       <p class="task-progress">Waiting</p>
     </div>
@@ -9,5 +9,30 @@
       <p class="task-progress">5/7 Items completed</p>
     </div>
     <div class="wide-tiles">
-    </div>
+    </div> -->
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Personal data
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
 </div>

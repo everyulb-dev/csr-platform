@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectProgressComponent implements OnInit {
 
+  isLinear = false;
+  panelOpenState = false;
+  
   constructor() { }
 
   ngOnInit() {
