@@ -12,6 +12,7 @@ import { MapComponent } from './components/map/map.component';
 import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule, MatCardModule} from '@angular/material';
 import { MonitoringComponent } from './components/monitoring/monitoring.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { MonitoringComponent } from './components/monitoring/monitoring.componen
       apiKey: 'AIzaSyAF16wKOlIRqQOAxtvR7Gk2Oobvpb_BfDk' //Google API key for maps
     }),
     MatCardModule,
+    ChartsModule
   ],
   declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MonitoringComponent, MapComponent]
 })
