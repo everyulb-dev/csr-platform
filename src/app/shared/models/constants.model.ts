@@ -5,7 +5,7 @@ export class AppConstant {
     SVG_IMG_S3_URL = '';
   
     // need to set a host name, dev host name, qa host name
-    PRODUCTION_HOST_NAMES: Array<string> = ['practical-goldwasser-513c87.netlify.com', ''];
+    PRODUCTION_HOST_NAMES: Array<string> = ['everyulb.netlify.com', ''];
     DEV_HOST_NAME = '';
     QA_HOST_NAME = '';
     LOCAL_HOST_NAME = 'localhost';
@@ -17,8 +17,8 @@ export class AppConstant {
     ENVIRONMENT_QA = 'qa';
     ENVIRONMENT_LOCAL = 'staging';
   
-    EMP_LOGOUT_REDIRECTION_URL_PRO = 'https://practical-goldwasser-513c87.netlify.com/login'
-    EMP_LOGOUT_REDIRECTION_URL_QA = 'https://practical-goldwasser-513c87.netlify.com/login'
+    EMP_LOGOUT_REDIRECTION_URL_PRO = 'https://everyulb.netlify.com/login'
+    EMP_LOGOUT_REDIRECTION_URL_QA = 'https://everyulb.netlify.com/login'
   }
   
   

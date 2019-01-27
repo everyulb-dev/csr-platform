@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ClientService } from '../../../../shared/services/client.service'
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,10 @@ export class LoginComponent implements OnInit {
   email: string;
   password: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private client: ClientService) { }
 
   ngOnInit() {
+    // this.getAllComponents();
   }
   
   ngAfterViewInit() {
@@ -30,5 +32,12 @@ export class LoginComponent implements OnInit {
       alert('Wrong Credentials');
     }
   }
+
+  // getAllComponents(): void {
+  //   this.client.getAllComponents().subscribe(
+  //     res => console.log(res),
+  //     err => console.error(err)
+  //   );
+  // }
 
 }

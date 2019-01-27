@@ -43,4 +43,8 @@ export class ClientService {
     });
   }
 
+  getAllComponents() {
+    return this.httpClient.get(this.domain.getTokenUrl() + 'components');
+  }
+
 }

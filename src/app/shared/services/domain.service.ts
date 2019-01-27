@@ -24,7 +24,7 @@ export class DomainService {
     } else {
       this.environment = '';
     }
-    this.listOfBaseURL.set('employerqa', 'https://practical-goldwasser-513c87.netlify.com');
+    this.listOfBaseURL.set('employerqa', 'http://159.89.160.209/api/v1/');
     this.setBaseUrl();
 
     if(!this.environment) {
@@ -35,7 +35,10 @@ export class DomainService {
   }
 
   setBaseUrl() {
-    this.baseUrl = this.listOfBaseURL.get('employer' + this.environment) ;
+    // console.log('Employer QA: ', this.listOfBaseURL.get('employerqa'));
+    // this.baseUrl = this.listOfBaseURL.get('employerqa' + this.environment);
+    this.baseUrl = this.listOfBaseURL.get('employerqa');
+    // this.baseUrl = 'http://159.89.160.209/api/v1/';
   }
 
   getTokenUrl(): string {
