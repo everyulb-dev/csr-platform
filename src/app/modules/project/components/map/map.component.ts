@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MapsAPILoader, AgmMap } from '@agm/core';
-import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-map',
