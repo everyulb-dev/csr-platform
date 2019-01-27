@@ -15,7 +15,7 @@
           *ngFor="let marker of markersData" 
           [latitude]="marker.lat" 
           [longitude]="marker.lng"
-          [iconUrl]="issuesIcon">
+          [iconUrl]="marker.icon">
         </agm-marker>
 
       </agm-map>

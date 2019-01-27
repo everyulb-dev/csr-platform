@@ -32,7 +32,7 @@
 .section-wrapper {
     margin-top: 15px;
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 10px;
     grid-template-columns: 60% 40% 40%;
     grid-template-areas: 
     "projects updates"

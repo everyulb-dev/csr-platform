@@ -12,69 +12,69 @@ export class ProjectsComponent implements OnInit {
 
   projects: Array<any> = [
     {
+      name: 'Jagmagaata Uttarakhand - Waste Segregation & Management',
+      date: '10 FEB 2019',
+      location: 'Uttarakhand'
+    },
+    {
       name: 'Watershed Development in Madhya Pradesh',
       date: '6 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Madhya Pradesh'
     },
     {
       name: 'Watershed Development in Jharkhand',
       date: '8 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Jharkhand'
     },
     {
       name: 'Watershed Development in Odisha',
       date: '5 JAN 2019',
-      location: 'Jharkhand'
+      location: 'Odisha'
     },
     {
       name: 'Watershed Development in Maharashtra',
       date: '11 FEB 2019',
-      location: 'Jharkhand'
+      location: 'Maharashtra'
     },
     {
       name: 'Community Drinking Water Intervention - Water ATMs in Rajasthan',
       date: '6 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Rajasthan'
     },
     {
       name: 'Community Drinking Water Intervention - Water ATMs in U.P.',
       date: '20 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Uttar-Pradesh'
     },
     {
       name: 'Restoration of Water Bodies - Sholinganallur Lake in Chennai',
       date: '5 JAN 2019',
-      location: 'Jharkhand'
+      location: 'Chennai'
     },
     {
       name: 'Restoration of Water Bodies - Rejuvenation of Ponds in Chennai ',
       date: '6 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Chennai'
     },
     {
       name: 'Restoration of Water Bodies - Refurbishment of the Wazirabad Drain',
       date: '6 FEB 2019',
-      location: 'Jharkhand'
+      location: 'Wazirabad'
     },
     {
       name: 'Revival of Village water ponds - Jaitaran Rajasthan',
       date: '15 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Rajasthan'
     },
     {
       name: 'Rain Roof Water Harvesting in Rajasthan',
       date: '6 JAN 2019',
-      location: 'Uttarakhand'
+      location: 'Rajasthan'
     },
     {
       name: 'Urban Afforestation',
       date: '6 JAN 2019',
       location: 'Jharkhand'
-    },
-    {
-      name: 'Jagmagaata Uttarakhand - Waste Segregation & Management',
-      date: '10 JUN 2019',
-      location: 'Uttarakhand'
     },
     {
       name: 'Schools on Solar',
@@ -94,7 +94,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Mid Day Meals for children of Municipal Schools of Bhubaneswar',
       date: '16 FEB 2019',
-      location: 'Jharkhand'
+      location: 'Bhubaneswar'
     },
     {
       name: 'Support for Education of Under-privileged Children',
@@ -124,12 +124,12 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Skill Devt of drug rehabilitated youth in Maharashtra',
       date: '6 FEB 2019',
-      location: 'Jharkhand'
+      location: 'Maharashtra'
     },
     {
       name: 'Skill Development of rural youth in Rajasthan',
       date: '5 MAR 2019',
-      location: 'Uttarakhand'
+      location: 'Rajasthan'
     },
     {
       name: 'Mini Health Clinics in Rural Areas',
