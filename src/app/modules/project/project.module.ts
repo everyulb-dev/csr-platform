@@ -8,7 +8,8 @@ import { ProjectComponentsComponent } from './components/project-components/proj
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule } from '@angular/material';
+import { MatTabsModule, MatCardModule} from '@angular/material';
+import { MonitoringComponent } from './components/monitoring/monitoring.component';
 
 @NgModule({
   imports: [
@@ -17,8 +18,9 @@ import { MatTabsModule } from '@angular/material';
     MatStepperModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule
   ],
-  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent]
+  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MonitoringComponent]
 })
 export class ProjectModule { }

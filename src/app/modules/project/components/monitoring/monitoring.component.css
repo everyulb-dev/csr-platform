@@ -1,0 +1,22 @@
+.section-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 80x;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.monitoring-section{
+    min-height: 100vh;
+}
+.section-header{
+    margin: 20px 30px;
+
+}
+
+.report-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
