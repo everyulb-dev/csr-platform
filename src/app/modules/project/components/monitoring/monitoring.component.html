@@ -57,4 +57,29 @@
       </section>
     
   </div>
+
+  <div class="footer-content">
+    <section>
+        <mat-card>
+                <div>
+                <div style="display: block">
+                    <canvas baseChart
+                            [datasets]="barChartData"
+                            [labels]="barChartLabels"
+                            [options]="barChartOptions"
+                            [legend]="barChartLegend"
+                            [chartType]="barChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+                </div>
+                <button (click)="randomize()">Update</button>
+                </div>
+        </mat-card>
+    </section>
+    <section>
+        <mat-card>
+                Revenue
+        </mat-card>
+    </section>
+  </div>
 </div>

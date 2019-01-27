@@ -20,3 +20,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
+.footer-content{
+    margin: 20px 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}

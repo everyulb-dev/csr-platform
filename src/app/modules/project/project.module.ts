@@ -10,6 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatCardModule} from '@angular/material';
 import { MonitoringComponent } from './components/monitoring/monitoring.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { MonitoringComponent } from './components/monitoring/monitoring.componen
     MatExpansionModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    ChartsModule
   ],
   declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MonitoringComponent]
 })
