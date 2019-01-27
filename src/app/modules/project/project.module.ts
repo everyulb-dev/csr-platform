@@ -15,6 +15,7 @@ import { MonitoringComponent } from './components/monitoring/monitoring.componen
 import { ChartsModule } from 'ng2-charts';
 import {MatRadioModule} from '@angular/material/radio';
 import {FormsModule} from '@angular/forms';
+import { ActivityComponent } from './components/activity/activity.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,6 @@ import {FormsModule} from '@angular/forms';
     MatRadioModule,
     FormsModule
   ],
-  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MonitoringComponent, MapComponent]
+  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MonitoringComponent, MapComponent, ActivityComponent]
 })
 export class ProjectModule { }
