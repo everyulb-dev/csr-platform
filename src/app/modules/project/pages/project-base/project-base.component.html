@@ -20,11 +20,34 @@
       </div>
   </div>
 </header>
-<div class="section-wrapper">
-  <section class="project-progress">
-    <app-project-progress></app-project-progress>
-  </section>
-  <section class="project-components">
-    <app-project-components></app-project-components>
-  </section>
+<div>
+
+    <mat-tab-group>
+      <mat-tab label="Progress"> 
+        <div  class="section-wrapper">
+          <section class="project-progress">
+            <app-project-progress></app-project-progress>
+          </section>
+          <section class="project-components">
+            <app-project-components></app-project-components>
+          </section>
+        </div>
+      </mat-tab>
+      <mat-tab label="Monitoring">
+          Monitoring
+      </mat-tab>
+      <mat-tab label="Maps">
+          Maps
+      </mat-tab>
+      <mat-tab label="Activity">
+          Activity
+      </mat-tab>
+    </mat-tab-group>
+
+
+  
+
 </div>
+
+
+

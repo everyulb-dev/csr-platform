@@ -8,6 +8,7 @@ import { ProjectComponentsComponent } from './components/project-components/proj
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectRoutingModule,
     MatStepperModule,
     MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent]
 })
