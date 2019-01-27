@@ -1,24 +1,31 @@
-<div class="container-fluid">
-  <div class="wrapper">
-    <div class="map-canvas">
-      <agm-map 
-        [latitude]="lat" 
-        [longitude]="lng" 
-        [zoomControlOptions]="{position: zoomPosition}" 
-        [streetViewControlOptions]="{position: streetViewPosition}" 
-        [zoom]="zoomLevel" 
-        [mapTypeControl]='true'
-        [mapTypeControlOptions] = "{position: mapTypeControlPosition}"
-        [styles]="mapStyles">
 
-        <agm-marker 
-          *ngFor="let marker of markersData" 
-          [latitude]="marker.lat" 
-          [longitude]="marker.lng"
-          [iconUrl]="marker.icon">
-        </agm-marker>
+<div class="wrapper">
+  <div class="map-canvas">
+    <agm-map 
+      [latitude]="lat" 
+      [longitude]="lng" 
+      [zoomControlOptions]="{position: zoomPosition}" 
+      [streetViewControlOptions]="{position: streetViewPosition}" 
+      [zoom]="zoomLevel" 
+      [mapTypeControl]='true'
+      [mapTypeControlOptions] = "{position: mapTypeControlPosition}"
+      [styles]="mapStyles">
 
-      </agm-map>
+      <agm-marker 
+        *ngFor="let marker of markersData" 
+        [latitude]="marker.lat" 
+        [longitude]="marker.lng"
+        [iconUrl]="marker.icon"
+        (markerClick)="markerClicked(marker)">
+      </agm-marker>
+
+    </agm-map>
+  </div>
+  <div class="map-card">
+    <div class="map-card-content">
+      <h4>{{ currentMarkerDetails.des}}</h4>
+      <h4 *ngIf="currentMarkerDetails.type === 'village'">{{ currentMarkerDetails.title}}</h4>
+      <img *ngIf="currentMarkerDetails.type === 'waste'" [src]="currentMarkerDetails.img">
     </div>
   </div>
 </div>

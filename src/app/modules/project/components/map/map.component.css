@@ -1,3 +1,16 @@
 agm-map {
     height: 700px;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-gap: 20px;
+}
+
+.map-card {
+    margin-right: 20px;
+}
+
+.map-card-content img {
+    width: 100%;
+}

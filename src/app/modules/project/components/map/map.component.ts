@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MapsAPILoader, AgmMap } from '@agm/core';
+import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-map',
@@ -236,6 +237,7 @@ export class MapComponent implements OnInit {
       icon: this.imgBaseURL+"seg.png"
     }
   ];
+  currentMarkerDetails = this.markersData[0];
 
   public mapStyles = [
     {
@@ -258,6 +260,12 @@ export class MapComponent implements OnInit {
   }
 
     ngOnInit(){
+    }
+
+    markerClicked(markerDetails: any): void {
+      this.currentMarkerDetails = markerDetails;
+      this.currentMarkerDetails['img'] = this.imgBaseURL + this.currentMarkerDetails['img'];
+      console.log(this.currentMarkerDetails);
     }
 
 }
