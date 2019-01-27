@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class MonitoringComponent implements OnInit {
 
   constructor() { }
+  selectedValue = 'Monthly';
   public barChartLabels:string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
