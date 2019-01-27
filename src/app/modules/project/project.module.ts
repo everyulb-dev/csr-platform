@@ -9,6 +9,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material';
+import { MapComponent } from './components/map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
@@ -17,8 +19,14 @@ import { MatTabsModule } from '@angular/material';
     MatStepperModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyAF16wKOlIRqQOAxtvR7Gk2Oobvpb_BfDk'
+    // }),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAF16wKOlIRqQOAxtvR7Gk2Oobvpb_BfDk' //Google API key for maps
+    })
   ],
-  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent]
+  declarations: [ProjectBaseComponent, ProjectProgressComponent, ProjectComponentsComponent, MapComponent]
 })
 export class ProjectModule { }

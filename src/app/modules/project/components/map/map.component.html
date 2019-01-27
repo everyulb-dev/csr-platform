@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="map-canvas">
+      <agm-map 
+        [latitude]="lat" 
+        [longitude]="lng" 
+        [zoomControlOptions]="{position: zoomPosition}" 
+        [streetViewControlOptions]="{position: streetViewPosition}" 
+        [zoom]="zoomLevel" 
+        [mapTypeControl]='true'
+        [mapTypeControlOptions] = "{position: mapTypeControlPosition}"
+        [styles]="mapStyles">
+
+        <agm-marker 
+          *ngFor="let marker of markersData" 
+          [latitude]="marker.lat" 
+          [longitude]="marker.lng"
+          [iconUrl]="issuesIcon">
+        </agm-marker>
+
+      </agm-map>
+    </div>
+  </div>
+</div>
