@@ -64,17 +64,27 @@
   <div class="footer-content">
     <section>
         <mat-card>
-                <div>
-                <div style="display: block">
-                    <canvas baseChart
-                            [datasets]="barChartData"
-                            [labels]="barChartLabels"
-                            [legend]="barChartLegend"
-                            [chartType]="barChartType"
+                <div class="chart-wrapper">
+                    <div style="display: block">
+                        <canvas baseChart
+                            [data]="pieChartData"
+                            [labels]="pieChartLabels"
+                            [chartType]="pieChartType"
                             (chartHover)="chartHovered($event)"
                             (chartClick)="chartClicked($event)"></canvas>
-                </div>
-                <button (click)="randomize()">Update</button>
+                    </div>
+                    <!-- <div class="legend">
+                        <div class="legend-title">
+                            <ul>
+                                <li *ngFor="let label of pieChartLabels"><p>{{ label}}</p></li>
+                            </ul>
+                        </div>
+                        <div class="legend-data">
+                            <ul>
+                                <li *ngFor="let data of pieChartData"><p>{{ data | number:'.2' }}</p></li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
         </mat-card>
     </section>
